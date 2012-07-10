@@ -1,9 +1,9 @@
 #!/bin/sh
 #
 #
-# Filename: master_release.sh
+# Filename: crystal_release.sh
 #
-# Please see the 'read_me.txt' for more information.
+# Please see the 'info.txt' for more information.
 #
 
 echo

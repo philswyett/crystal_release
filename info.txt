@@ -1,1 +1,16 @@
- 
+Information
+===========
+
+
+Preamble
+========
+
+What follows is information about the scripts and how to setup and use them.
+
+
+Configuring for use
+===================
+
+
+Running the 'crystal_release.sh' script
+=======================================

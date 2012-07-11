@@ -6,8 +6,11 @@
 # Please see the 'info.txt' for more information.
 #
 
+# Version number set for our script(s).
+script_version="0.1.0"
+
 echo
-echo "*** This is the master release script for CS and CEL ***"
+echo "*** This is the master release script for CS and CEL - Version $script_version ***"
 echo
 echo "Do you wish to continue? (yes/no)"
 read answer
@@ -18,8 +21,10 @@ if [ $answer = "yes" ] ; then
   echo "*** Checking for programs required by the release script(s) ***"
   echo
   sh sub_scripts/check_dep_programs.sh
-  # Edit below path of the CS or CEL tree you are using to release from.
-  export SRC_TREE_LOCATION=cs_2_x_x_branch
+
+  # Edit below path to match location of CS or CEL code tree you are using
+  # to make a release from.
+  export SRC_TREE_LOCATION="cs_2_x_x_branch"
 
   echo
   echo "Do you want to make a release of CS or CEL? (cs/cel)"
@@ -104,7 +109,7 @@ if [ $answer = "yes" ] ; then
     echo
     echo "Do you wish to continue? (yes/no)"
     read answer
-    if [ $answer = "yes" ]; then
+    if [ $answer = "yes" ] ; then
       sh ../sub_scripts/regenerate_configure.sh
     fi
 
@@ -120,7 +125,7 @@ if [ $answer = "yes" ] ; then
     echo
     echo "Do you wish to continue? (yes/no)"
     read answer
-    if [ $answer = "yes" ]; then
+    if [ $answer = "yes" ] ; then
       echo
       echo "*** Running configure. ***"
       echo

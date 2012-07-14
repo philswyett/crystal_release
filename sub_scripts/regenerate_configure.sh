@@ -10,5 +10,6 @@ else
   sh autogen.sh
 fi
 
-svn commit -m "Regenerated configure" configure
-
+if [ $crystal_release_team_mode = "yes" ] ; then
+  svn commit -m "Regenerated configure" configure
+fi

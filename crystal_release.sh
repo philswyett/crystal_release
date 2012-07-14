@@ -9,6 +9,11 @@
 # Version number set for our script(s).
 script_version="0.1.0"
 
+# Switch to allow certain changes to be committed to vcs.
+#
+# Third party projects should 'not' enable this mode.
+export crystal_release_team_mode="no"
+
 echo
 echo "*** This is the master release script for CS and CEL - Version $script_version ***"
 echo
